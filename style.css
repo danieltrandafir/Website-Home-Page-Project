@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(180, 20%, 80%);
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+}
+/*header section*/
+
+header {
+    background-color: #f6fff9;
+    margin-top: 131px;
+}
+
+.search-box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(240, 20%, 85%);
+    justify-content: center;
+    height:auto;
+    border: 1px solid purple;
+    border-radius: 30px;
+    text-align: center;
+    align-self: center;
+    margin-left: 0;
+    }
+
+.top-menu input[type=text] {
+padding: 6px;
+margin: 7px 0 7px .5rem;
+font-size: 17px;
+border: none;
+border-radius: 5px;
+}
+
+.top-menu .search-box button {
+padding: 0 5px;
+margin: 7px 7px 7px 0;
+background: hsl(240, 20%, 85%);
+font-size: 17px;
+border: none;
+cursor: pointer;
+
+}
+
+.top-menu .search-box button:hover {
+background:hsl(240, 20%, 95%);
+border-radius: 5px;
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width:90%;
+    background-color: #f6fff9;
+    padding-bottom: 1rem;
+    padding-left: 30px;
+}
+
+.top-menu .page-title {
+    color:gray;
+    border-bottom: solid 2px purple;
+    border-radius: 25px;
+    font: bold 'Noticia Text', serif;
+    overflow-wrap: break-word;
+    max-width: 14rem;
+    text-align: center;
+    letter-spacing: .2em;
+    text-shadow: 2px 1px mediumslateblue;
+}
+
+.top-menu > div {
+    margin-right: 3vw;
+}
+
+.top-menu nav {
+    align-self: center;
+}
+
+.topnav {
+    overflow: hidden;
+    height:auto;
+  }
+  
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 10px 16px;
+text-decoration: none;
+}
+
+.topnav a.active {
+background-color: #2196F3;
+border-radius: 20px;
+color: white;
+font-weight: bolder;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding:0;
+}
+
+nav li {
+    background-color:gainsboro;
+    margin: 0.5rem;
+    padding: 0;
+    display: inline;
+    border: 1px solid purple;
+    border-radius: 20px;
+    box-shadow: 
+    5px 5px 8px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
+}
+
+nav li:hover {
+    background-color:cornsilk;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.1em);
+}
+
+.head-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 1rem;
+    padding-bottom: 3rem;
+}
+
+header h2 {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.head-images img {
+    width: 350px;
+    margin: 10px 5px;
+    box-shadow: 3px;
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        margin-top: 184px;
+    }
+    
+    header .top-menu {
+        padding: 0;
+        margin:auto;
+    }
+    
+    .top-menu .page-title {
+        margin:auto;
+        font-size:small;
+    }
+    
+    .top-menu .search-box {
+        margin-top: 0.5rem;
+        max-width: 200px;
+    }
+    
+    .top-menu .search-box button {
+        margin-top: 0;
+    }
+    
+    .top-menu input[type=text] {
+        border: 1px solid #ccc;
+        width: 100%;
+        margin: .5rem; 
+    }
+    
+    header .head-images img {
+        width: 200px;
+    }
+    }
+
+/*Thumbnails section*/
+
+#food-thumbs h2 {
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+    margin: 4rem 0 0;
+}
+
+.thumb-images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.thumb-images img{
+    border-radius: 20px;
+    box-shadow: 
+    8px 8px 12px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 8px 0 rgba(255, 255, 255, 0.112);
+    width: 120px;
+    height: 70px;
+    margin:  35px 10px 5px;
+    transition: height 1s, width 1s, box-shadow 1s;
+}
+
+.thumb-images img:hover {
+    height: 75px;
+    width: 125px;
+    box-shadow: -4px -4px 8px 0 lightgoldenrodyellow,
+    8px 8px 16px 0 darkgrey;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@media only screen and (max-width:800px) {
+    .thumb-images {
+        margin:0;
+    }
+
+    .thumb-images figure {
+        margin: 3vw 2vw;
+    }
+}
+
+/*Foods info section*/
+
+#foods-info {
+    background-color: hsl(149, 33%, 93%);
+}
+
+#foods-info .food img{
+    max-width: 250px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.food {
+    display: flex;
+    padding: 2rem;
+    border-bottom: 2px solid grey;
+    justify-content: center;
+}
+
+ .food .food-text {
+    max-width: 50%;
+    align-self: center;
+}
+
+.food .food-text h3 {
+    margin-top: 0;
+    font-size: larger;
+    font-weight:900;
+}
+
+.food .food-text p {
+    line-height:1.4;
+}
+
+@media only screen and (max-width: 800px){
+    .food .food-img img {
+        width: 200px;
+    }
+
+}
+
+/* footer */
+
+footer{
+    background: #44bae8;
+    width: auto;
+    padding-top: .5rem;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h4{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0 1rem 0;
+    padding:0;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin: .2rem;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background:darkslategrey;
+    width: auto;
+    padding: 0 0 40px 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:tomato;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ 
